@@ -17,6 +17,7 @@ export class BookStoreApplicationPage{
     readonly dateBirth:Locator;
     readonly practice:Locator
     readonly submitBtn:Locator;
+    readonly testlocator:Locator;
 
 constructor(page: Page, context: BrowserContext) {
         this.page = page;

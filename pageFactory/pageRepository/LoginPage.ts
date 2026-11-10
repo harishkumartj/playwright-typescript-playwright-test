@@ -7,7 +7,7 @@ let webActions: WebActions;
 export class LoginPage {
     readonly page: Page;
     readonly context: BrowserContext;
-    readonly USERNAME_EDITBOX: Locator;
+    readonly USERNAME_EDITBOX:Locator;
     readonly PASSWORD_EDITBOX: Locator;
     readonly LOGIN_BUTTON: Locator;
     readonly BOOKS_SEARCH_BOX: Locator;

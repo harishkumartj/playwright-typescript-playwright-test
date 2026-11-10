@@ -4,6 +4,7 @@ import { expect } from '@playwright/test';
 // We can use Steps like in Cucmber format as shown below
 
 test(`Verify Book Store Login`, { tag: '@Smoke'}, async ({ loginPage, webActions }) => {
+    
     await test.step(`Navigate to Application`, async () => {
         await loginPage.navigateToURL();
     });

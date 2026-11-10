@@ -10,5 +10,9 @@ export const testConfig = {
     dbPassword: ``,
     dbServerName: ``,
     dbPort: ``,
-    dbName: ``
+    dbName: ``,
+    usernamee:'harish',
+    lastnamee:'TJ',
+    dob:'28 Sep 1992',
+    newFullname:'harishKumar'
 }

@@ -465,3 +465,7 @@ npm run lighthouse
 [detailed-report-screenshot]: ReadMeImages/DetailedReport.PNG
 [failure-report-screenshot]: ReadMeImages/FailureReport.PNG
 [sonar-report-screenshot]: ReadMeImages/SonarReport.PNG
+
+
+//npx cross-env ENV=qa npx playwright test Login.test.ts --project=Chrome
+//npm run allureReport

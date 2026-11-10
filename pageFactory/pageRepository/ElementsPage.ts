@@ -1,5 +1,6 @@
 import { Locator, Page, BrowserContext } from '@playwright/test';
 import path from 'path';
+import { testConfig } from '../../testConfig';
 
 export class ElementsPage {
     readonly page: Page;
@@ -50,6 +51,7 @@ export class ElementsPage {
 
     async enterFullName(name: string): Promise<void> {
         await this.FULL_NAME_EDITBOX.fill(name);
+        //await this.FULL_NAME_EDITBOX.fill(testConfig.newFullname);
     }
 
     async clickSubmit(): Promise<void> {

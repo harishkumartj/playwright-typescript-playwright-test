@@ -6,6 +6,7 @@ test(`Verify Elements Page`, { tag: '@Smoke'}, async ({ loginPage, elementsPage,
     await webActions.clickByText('Elements'); // Click on Elements Icon identified via text selector
     await webActions.clickByText('Text Box'); //Click on TextBox Navigation Sidebar identified via text selector
     await elementsPage.enterFullName(`AutoTest`);
+    //await elementsPage.enterFullName('');
     await elementsPage.clickSubmit();
     await expect(elementsPage.SUBMITTED_TEXT).toBeVisible();
     await webActions.clickByText('Check Box');

@@ -1,4 +1,8 @@
- nodejs 'NodeJS-22'
+pipeline {
+    agent any
+
+    tools {
+        nodejs 'NodeJS-22'
     }
 
     stages {
@@ -20,7 +24,7 @@
 
         stage('Install Playwright Browsers') {
             steps {
-                bat 'npx playwright install'
+                bat 'npx playwright install chromium'
             }
         }
 
@@ -34,7 +38,7 @@
     post {
         always {
             archiveArtifacts artifacts: 'playwright-report/**',
-                             allowEmptyArchive: true
+                allowEmptyArchive: true
         }
     }
 }
